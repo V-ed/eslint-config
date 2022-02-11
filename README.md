@@ -29,9 +29,9 @@ OR
 {
   "eslintConfig": {
     "extends": ["@v-ed/eslint-config"]
-		"overrides": {
-			...
-		}
+    "overrides": {
+      ...
+    }
   },
 }
 ```
