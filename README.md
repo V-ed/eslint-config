@@ -15,8 +15,23 @@ npm install --save-dev @v-ed/eslint-config
 ```jsonc
 {
   "extends": ["@v-ed/eslint-config"], // or ["@v-ed"]
-  "includes": {
+  "overrides": {
     ...
   }
+}
+```
+
+OR
+
+`package.json`
+
+```jsonc
+{
+  "eslintConfig": {
+    "extends": ["@v-ed/eslint-config"]
+		"overrides": {
+			...
+		}
+  },
 }
 ```
