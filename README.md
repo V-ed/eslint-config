@@ -12,7 +12,7 @@ npm install --save-dev @v-ed/eslint-config
 
 `.eslintrc.json`
 
-```json
+```jsonc
 {
   "extends": ["@v-ed/eslint-config"], // or ["@v-ed"]
   "includes": {
