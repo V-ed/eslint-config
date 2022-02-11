@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+
+env:
+  NODE_VERSION: '16'
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{env.NODE_VERSION}}
+
+      - name: Cache Node Modules
+        id: cache-modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: ${{ env.NODE_VERSION }}-${{ runner.OS }}-build-${{ hashFiles('package-lock.json') }}
+
+      - name: Install
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: npm ci --no-optional
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Verify index
+        run: node index.js
