@@ -2,6 +2,9 @@ name: CI
 
 on:
   push:
+    paths:
+      - '**/*.js'
+      - 'package.json'
 
 env:
   NODE_VERSION: '16'
