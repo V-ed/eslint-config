@@ -47,7 +47,7 @@ jobs:
           echo ::set-output name=git_author_email::"$(git show -s --format='%aE' HEAD)"
           echo ::set-output name=git_author_username::"$(git show -s --format='%aN' HEAD)"
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         if: steps.release-please.outputs.pr && github.event_name != 'workflow_dispatch'
         with:
           node-version: ${{env.NODE_VERSION}}
@@ -85,7 +85,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: ${{env.NODE_VERSION}}
           registry-url: 'https://registry.npmjs.org'
