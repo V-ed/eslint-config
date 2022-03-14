@@ -35,7 +35,7 @@ jobs:
 
       - name: Fetching Release Please's branch
         if: steps.release-please.outputs.pr && github.event_name != 'workflow_dispatch'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ steps.vars.outputs.git_branch }}
           fetch-depth: 2
@@ -81,7 +81,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch' || needs.release.outputs.release_created
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
