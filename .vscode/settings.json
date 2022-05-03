@@ -1,11 +1,4 @@
 {
-	"git.pullTags": false,
-	"json.schemas": [
-		{
-			"fileMatch": ["renovate.json"],
-			"url": "https://docs.renovatebot.com/renovate-schema.json"
-		}
-	],
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true
@@ -32,5 +25,12 @@
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": true
 		}
-	}
+	},
+	"git.pullTags": false,
+	"json.schemas": [
+		{
+			"fileMatch": ["renovate.json"],
+			"url": "https://docs.renovatebot.com/renovate-schema.json"
+		}
+	]
 }

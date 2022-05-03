@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - '**/*.js'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/main.yml'
+
+env:
+  NODE_VERSION: '16'
+  PNPM_VERSION: 7
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    if: contains(fromJson('["ved-bot", "renovate[bot]"]'), github.actor) == false
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Check for dupe action
+        id: skip_check
+        uses: fkirc/skip-duplicate-actions@v3
+
+      - name: Cache pnpm modules
+        id: cache-modules
+        if: steps.skip_check.outputs.should_skip != 'true'
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: install-${{ env.NODE_VERSION }}-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            install-${{ env.NODE_VERSION }}-${{ runner.os }}-
+
+      - name: Install packages
+        if: steps.skip_check.outputs.should_skip != 'true'
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+          run_install: true
+
+      - name: Lint
+        if: steps.skip_check.outputs.should_skip != 'true'
+        run: pnpm run lint
+
+      - name: Verify index
+        if: steps.skip_check.outputs.should_skip != 'true'
+        run: node index.js
