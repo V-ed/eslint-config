@@ -27,7 +27,7 @@
 		"eslint-define-config": "1.4.0"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.0.0 <5.20.0",
 		"@typescript-eslint/parser": "^5.0.0"
 	},
 	"peerDependencies": {
