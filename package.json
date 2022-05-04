@@ -25,13 +25,15 @@
 	"devDependencies": {
 		"@v-ed/prettier-config": "0.1.1",
 		"eslint": "8.14.0",
-		"eslint-define-config": "1.4.0"
+		"eslint-define-config": "1.4.0",
+		"typescript": "4.6.4"
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.0.0 <5.20.0",
 		"@typescript-eslint/parser": "^5.0.0"
 	},
 	"peerDependencies": {
-		"eslint": ">= 8"
+		"eslint": ">= 8",
+		"typescript": "*"
 	}
 }
