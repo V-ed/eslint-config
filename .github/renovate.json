@@ -1,3 +1,9 @@
 {
-	"extends": ["github>V-ed/renovate-config:lib-config"]
+	"extends": ["github>V-ed/renovate-config:lib-config"],
+	"packageRules": [
+		{
+			"matchPackageNames": ["@typescript-eslint/eslint-plugin"],
+			"rangeStrategy": "in-range-only"
+		}
+	]
 }
