@@ -65,7 +65,13 @@ const configs = {
 		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 		'@typescript-eslint/no-magic-numbers': [
 			'warn',
-			{ ignoreArrayIndexes: true, ignoreEnums: true, ignoreReadonlyClassProperties: true, ignore: [-1, 0, 1, 1000, 60, 24] },
+			{
+				ignoreArrayIndexes: true,
+				ignoreTypeIndexes: true,
+				ignoreEnums: true,
+				ignoreReadonlyClassProperties: true,
+				ignore: [-1, 0, 1, 1000, 60, 24],
+			},
 		],
 		'@typescript-eslint/no-non-null-assertion': 'off',
 		// "@typescript-eslint/no-explicit-any": "off",
