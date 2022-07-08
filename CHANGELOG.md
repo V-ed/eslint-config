@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.2...eslint-config-v0.1.3) (2022-07-08)
+
+
+### Bug Fixes
+
+* force ts eslint plugin to be above 5.20.0 to use newer options ([9919cf6](https://github.com/V-ed/eslint-config/commit/9919cf6699aae3e66fdc30ed3c537e30edeca55a))
+
 ## [0.1.2](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.1...eslint-config-v0.1.2) (2022-07-08)
 
 
