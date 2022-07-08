@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.1...eslint-config-v0.1.2) (2022-07-08)
+
+
+### Bug Fixes
+
+* add ignoreTypeIndexes, fixing issue with ts eslint-plugin >=5.20.0 ([873473e](https://github.com/V-ed/eslint-config/commit/873473e8a9e295295c4146d69f41e930c11fc6bd))
+
 ### [0.1.1](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.0...eslint-config-v0.1.1) (2022-05-03)
 
 
