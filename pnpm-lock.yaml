@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@typescript-eslint/eslint-plugin': ^5.20.0
   '@typescript-eslint/parser': ^5.0.0
-  '@v-ed/prettier-config': 0.1.1
+  '@v-ed/prettier-config': 0.1.2
   eslint: 8.20.0
   eslint-define-config: 1.5.1
   typescript: 4.7.4
@@ -13,7 +13,7 @@ dependencies:
   '@typescript-eslint/parser': 5.30.6_he2ccbldppg44uulnyq4rwocfa
 
 devDependencies:
-  '@v-ed/prettier-config': 0.1.1
+  '@v-ed/prettier-config': 0.1.2
   eslint: 8.20.0
   eslint-define-config: 1.5.1
   typescript: 4.7.4
@@ -200,8 +200,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: false
 
-  /@v-ed/prettier-config/0.1.1:
-    resolution: {integrity: sha512-DyhQikR55iBRCdSgAGOCi6IdoBs5lEzJgMTOLt4n3sF2jp9E6lHnKu6/h2v//N9jQX0qpsuFXW4rX7X/HzS7IA==}
+  /@v-ed/prettier-config/0.1.2:
+    resolution: {integrity: sha512-X0DBqlnEiFzPwNaPJ2emNDDUi7r+tJm0jbj/fGfNf5roQ7DNicJ3V9DbAx/lqB/8m37mhWBksMhSqGqubjWlgQ==}
     engines: {node: '>=14'}
     dev: true
 
