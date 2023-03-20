@@ -5,7 +5,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.0.0
   '@v-ed/prettier-config': 0.1.2
   eslint: 8.36.0
-  eslint-define-config: 1.16.0
+  eslint-define-config: 1.17.0
   typescript: 4.9.5
 
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
 devDependencies:
   '@v-ed/prettier-config': 0.1.2
   eslint: 8.36.0
-  eslint-define-config: 1.16.0
+  eslint-define-config: 1.17.0
   typescript: 4.9.5
 
 packages:
@@ -347,8 +347,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  /eslint-define-config/1.16.0:
-    resolution: {integrity: sha512-0gMi2IIDVDNAcy0nDaRss41cBTRMFFAp83WBcGIPi5S7uMOLhNmvbSPozvOoUxv5dIRuGV6E6l+HUnEoFyEbFg==}
+  /eslint-define-config/1.17.0:
+    resolution: {integrity: sha512-J1sweMoWsLcokaiAlfOCC4yMoHbvC/kDAxorm5TkUcD74w+kauMIyjKLM3dOadNxVKOjDiYN1Tu2x9N+4EUuuQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13', pnpm: '>= 7.0.0'}
     dev: true
 
