@@ -19,32 +19,28 @@ jobs:
     if: contains(fromJson('["ved-bot", "renovate[bot]"]'), github.actor) == false
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
       - name: Check for dupe action
         id: skip_check
         uses: fkirc/skip-duplicate-actions@v4
 
-      - name: Cache pnpm modules
-        id: cache-modules
+      - uses: actions/checkout@v3
         if: steps.skip_check.outputs.should_skip != 'true'
-        uses: actions/cache@v3
-        with:
-          path: ~/.local/share/pnpm/store
-          key: install-${{ env.NODE_VERSION }}-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            install-${{ env.NODE_VERSION }}-${{ runner.os }}-
 
-      - name: Install packages
+      - name: Install pnpm
         if: steps.skip_check.outputs.should_skip != 'true'
         uses: pnpm/action-setup@v2
         with:
           version: ${{ env.PNPM_VERSION }}
-          run_install: |
-            - recursive: false
+
+      - uses: actions/setup-node@v3
+        if: steps.skip_check.outputs.should_skip != 'true'
+        with:
+          cache: 'pnpm'
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install packages
+        if: steps.skip_check.outputs.should_skip != 'true'
+        run: pnpm install
 
       - name: Lint
         if: steps.skip_check.outputs.should_skip != 'true'
