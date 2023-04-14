@@ -1,4 +1,4 @@
-/** @type { import('eslint-define-config').EslintConfig } */
+/** @type { import('eslint-define-config').ESLintConfig } */
 const configs = {
 	extends: [
 		'eslint:recommended',
@@ -12,6 +12,7 @@ const configs = {
 		sourceType: 'module',
 		ecmaVersion: 6,
 		ecmaFeatures: {
+			// @ts-ignore
 			modules: true,
 		},
 	},
