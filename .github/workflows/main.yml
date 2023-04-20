@@ -21,7 +21,8 @@ jobs:
     steps:
       - name: Check for dupe action
         id: skip_check
-        uses: fkirc/skip-duplicate-actions@v4
+        uses: fkirc/skip-duplicate-actions@v5
+        continue-on-error: true
 
       - uses: actions/checkout@v3
         if: steps.skip_check.outputs.should_skip != 'true'
