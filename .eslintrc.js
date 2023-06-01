@@ -20,7 +20,6 @@ const configs = {
 	env: {
 		es6: true,
 		node: true,
-		jest: true,
 	},
 	ignorePatterns: ['@types', 'build', 'dist', 'gulpfile.ts', 'stylelint.config.js', '_generated', '@generated'],
 	rules: {
@@ -79,7 +78,7 @@ const configs = {
 	},
 	overrides: [
 		{
-			files: ['**/*.{e2e-spec,spec}.ts', '**/{tests,prisma}/**/*.ts'],
+			files: ['**/*.{e2e-spec,spec,test}.ts', '**/{tests,prisma}/**/*.ts'],
 			rules: {
 				'@typescript-eslint/no-magic-numbers': 'off',
 				'@typescript-eslint/no-explicit-any': 'off',
