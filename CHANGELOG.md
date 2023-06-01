@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.3...eslint-config-v0.1.4) (2023-06-01)
+
+
+### Bug Fixes
+
+* add `.test.ts` pattern to test files ([cd8f61c](https://github.com/V-ed/eslint-config/commit/cd8f61cb1bb047d81155ca37306106d33a123c73))
+
 ## [0.1.3](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.2...eslint-config-v0.1.3) (2022-07-08)
 
 
