@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@v-ed/prettier-config':
-    specifier: 0.1.2
-    version: 0.1.2
+    specifier: 0.2.0
+    version: 0.2.0(prettier@2.8.8)(svelte@3.59.1)
   eslint:
     specifier: 8.42.0
     version: 8.42.0
@@ -234,9 +234,17 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: false
 
-  /@v-ed/prettier-config@0.1.2:
-    resolution: {integrity: sha512-X0DBqlnEiFzPwNaPJ2emNDDUi7r+tJm0jbj/fGfNf5roQ7DNicJ3V9DbAx/lqB/8m37mhWBksMhSqGqubjWlgQ==}
+  /@v-ed/prettier-config@0.2.0(prettier@2.8.8)(svelte@3.59.1):
+    resolution: {integrity: sha512-bIe+8MV38UmUBT1E9aQc14Ko6yzph+0DIJu9PW5PjTQRiMUIKicjno80bfYanW7/UJNFduzqMyf34bMN8NtHYw==}
     engines: {node: '>=14'}
+    peerDependencies:
+      prettier: ^2
+    dependencies:
+      prettier: 2.8.8
+    optionalDependencies:
+      prettier-plugin-svelte: 2.10.1(prettier@2.8.8)(svelte@3.59.1)
+    transitivePeerDependencies:
+      - svelte
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.8.2):
@@ -738,6 +746,24 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
+  /prettier-plugin-svelte@2.10.1(prettier@2.8.8)(svelte@3.59.1):
+    resolution: {integrity: sha512-Wlq7Z5v2ueCubWo0TZzKc9XHcm7TDxqcuzRuGd0gcENfzfT4JZ9yDlCbEgxWgiPmLHkBjfOtpAWkcT28MCDpUQ==}
+    requiresBuild: true
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0 || ^4.0.0-next.0
+    dependencies:
+      prettier: 2.8.8
+      svelte: 3.59.1
+    dev: true
+    optional: true
+
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
   /punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
@@ -802,6 +828,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       has-flag: 4.0.0
+
+  /svelte@3.59.1:
+    resolution: {integrity: sha512-pKj8fEBmqf6mq3/NfrB9SLtcJcUvjYSWyePlfCqN9gujLB25RitWK8PvFzlwim6hD/We35KbPlRteuA6rnPGcQ==}
+    engines: {node: '>= 8'}
+    dev: true
+    optional: true
 
   /text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
