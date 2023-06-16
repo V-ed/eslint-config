@@ -23,7 +23,7 @@
 		"lint": "eslint \"*.js\""
 	},
 	"devDependencies": {
-		"@v-ed/prettier-config": "0.2.0",
+		"@v-ed/prettier-config": "0.2.1",
 		"eslint": "8.42.0",
 		"eslint-define-config": "1.20.0",
 		"typescript": "5.1.3"
