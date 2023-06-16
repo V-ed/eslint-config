@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.5...eslint-config-v0.1.6) (2023-06-16)
+
+
+### Bug Fixes
+
+* actually apply js handling to .cjs files as well ([af209f7](https://github.com/V-ed/eslint-config/commit/af209f7ad8fe48c8c9fe4cf3814b5d516f1db2c9))
+
 ## [0.1.5](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.4...eslint-config-v0.1.5) (2023-06-16)
 
 
