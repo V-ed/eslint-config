@@ -85,7 +85,7 @@ const configs = {
 			},
 		},
 		{
-			files: ['*.js'],
+			files: ['*.c?js'],
 			rules: {
 				'@typescript-eslint/no-var-requires': 'off',
 				'@typescript-eslint/no-magic-numbers': 'off',
