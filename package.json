@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@v-ed/prettier-config": "0.3.0",
-		"eslint": "8.50.0",
+		"eslint": "8.51.0",
 		"eslint-define-config": "1.23.0",
 		"typescript": "5.2.2"
 	},
