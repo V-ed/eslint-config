@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.6...eslint-config-v0.1.7) (2024-03-25)
+
+
+### Dependencies
+
+* update dependency @typescript-eslint/eslint-plugin to v5.62.0 ([225faac](https://github.com/V-ed/eslint-config/commit/225faac3c5d36389e67d005a2f49e6bdbddf0a4a))
+
 ## [0.1.6](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.5...eslint-config-v0.1.6) (2023-06-16)
 
 
