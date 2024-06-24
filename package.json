@@ -26,7 +26,7 @@
 		"@v-ed/prettier-config": "0.3.0",
 		"eslint": "9.5.0",
 		"eslint-define-config": "2.1.0",
-		"typescript": "5.4.5"
+		"typescript": "5.5.2"
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.20.0",
