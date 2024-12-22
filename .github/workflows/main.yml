@@ -8,8 +8,8 @@ on:
       - '.github/workflows/main.yml'
 
 env:
-  NODE_VERSION: '16'
-  PNPM_VERSION: 8
+  NODE_VERSION: '22'
+  PNPM_VERSION: 9
 
 jobs:
   lint:
