@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.1...eslint-config-v0.2.2) (2024-12-23)
+
+
+### Bug Fixes
+
+* properly set global ignores and overrides ([17e1e89](https://github.com/V-ed/eslint-config/commit/17e1e89707377d90173ee6c78e3a4c2771c60884))
+
 ## [0.2.1](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.0...eslint-config-v0.2.1) (2024-12-23)
 
 
