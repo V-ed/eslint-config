@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.0...eslint-config-v0.2.1) (2024-12-23)
+
+
+### Bug Fixes
+
+* wrong index.js import ([cfb9521](https://github.com/V-ed/eslint-config/commit/cfb9521fb5aa7183546519185291f761306b00bd))
+
 ## [0.2.0](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.1.6...eslint-config-v0.2.0) (2024-12-23)
 
 
