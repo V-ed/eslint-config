@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
 	{
-		ignores: ['@types', 'build', 'dist', 'gulpfile.ts', 'stylelint.config.js', '_generated', '@generated'],
+		ignores: ['**/@types/', '**/build/', '**/dist/', '**/gulpfile.ts', '**/stylelint.config.js', '**/_generated/', '**/@generated/'],
 	},
 	eslint.configs.recommended,
 	...tseslint.configs.recommended,
