@@ -1,3 +1,3 @@
-import flatConfig from './eslint.config';
+import flatConfig from './eslint.config.js';
 
 export default flatConfig;
