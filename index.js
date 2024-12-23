@@ -1,3 +1,3 @@
-const config = require('./.eslintrc');
+import flatConfig from './eslint.config';
 
-module.exports = config;
+export default flatConfig;

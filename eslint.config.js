@@ -1,27 +1,15 @@
-/** @type { import('eslint-define-config').ESLintConfig } */
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
+
+const tslinter = tseslint.config(eslint.configs.recommended, tseslint.configs.recommended);
+
+/** @type { import('eslint').Linter.Config } */
 const configs = {
-	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/eslint-recommended',
-		'plugin:@typescript-eslint/recommended',
-		// "plugin:prettier/recommended",
-	],
-	plugins: ['@typescript-eslint/eslint-plugin'],
-	parser: '@typescript-eslint/parser',
-	parserOptions: {
+	languageOptions: {
 		sourceType: 'module',
 		ecmaVersion: 6,
-		ecmaFeatures: {
-			// @ts-ignore
-			modules: true,
-		},
 	},
-	root: true,
-	env: {
-		es6: true,
-		node: true,
-	},
-	ignorePatterns: ['@types', 'build', 'dist', 'gulpfile.ts', 'stylelint.config.js', '_generated', '@generated'],
+	ignores: ['@types', 'build', 'dist', 'gulpfile.ts', 'stylelint.config.js', '_generated', '@generated'],
 	rules: {
 		camelcase: 'error',
 		quotes: ['error', 'single', { allowTemplateLiterals: true }],
@@ -60,7 +48,6 @@ const configs = {
 		'@typescript-eslint/interface-name-prefix': 'off',
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
-		'@typescript-eslint/semi': ['error', 'always'],
 		'@typescript-eslint/no-empty-function': ['error', { allow: ['private-constructors'] }],
 		'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 		'@typescript-eslint/no-magic-numbers': [
@@ -76,29 +63,31 @@ const configs = {
 		'@typescript-eslint/no-non-null-assertion': 'off',
 		// "@typescript-eslint/no-explicit-any": "off",
 	},
-	overrides: [
-		{
-			files: ['**/*.{e2e-spec,spec,test}.ts', '**/{tests,prisma}/**/*.ts'],
-			rules: {
-				'@typescript-eslint/no-magic-numbers': 'off',
-				'@typescript-eslint/no-explicit-any': 'off',
-			},
-		},
-		{
-			files: ['*.{js,cjs}'],
-			rules: {
-				'@typescript-eslint/no-var-requires': 'off',
-				'@typescript-eslint/no-magic-numbers': 'off',
-				'@typescript-eslint/ban-ts-comment': 'off',
-			},
-		},
-		{
-			files: ['vite.config.ts'],
-			rules: {
-				camelcase: 'off',
-			},
-		},
-	],
 };
 
-module.exports = configs;
+/** @type { import('eslint').Linter.Config[] } */
+const overrides = [
+	{
+		files: ['**/*.{e2e-spec,spec,test}.ts', '**/{tests,prisma}/**/*.ts'],
+		rules: {
+			'@typescript-eslint/no-magic-numbers': 'off',
+			'@typescript-eslint/no-explicit-any': 'off',
+		},
+	},
+	{
+		files: ['*.{js,cjs}'],
+		rules: {
+			'@typescript-eslint/no-var-requires': 'off',
+			'@typescript-eslint/no-magic-numbers': 'off',
+			'@typescript-eslint/ban-ts-comment': 'off',
+		},
+	},
+	{
+		files: ['vite.config.ts'],
+		rules: {
+			camelcase: 'off',
+		},
+	},
+];
+
+export default [...tslinter, configs, ...overrides];
