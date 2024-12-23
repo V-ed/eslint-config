@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.2...eslint-config-v0.2.3) (2024-12-23)
+
+
+### Bug Fixes
+
+* add proper no-unused-vars configs ([4d070b3](https://github.com/V-ed/eslint-config/commit/4d070b3284b77ebaeccf54dae9674a9a1263bc87))
+
 ## [0.2.2](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.1...eslint-config-v0.2.2) (2024-12-23)
 
 
