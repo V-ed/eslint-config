@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.6](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.5...eslint-config-v0.2.6) (2025-09-29)
+
+
+### Bug Fixes
+
+* proper peerDeps setup ([d138ce2](https://github.com/V-ed/eslint-config/commit/d138ce24cc7b0cc38a13a42688a0d6e412dd6f0b))
+
 ## [0.2.5](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.4...eslint-config-v0.2.5) (2025-09-29)
 
 
