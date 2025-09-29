@@ -6,7 +6,7 @@ export default tseslint.config(
 		ignores: ['**/@types/', '**/build/', '**/dist/', '**/gulpfile.ts', '**/stylelint.config.js', '**/_generated/', '**/@generated/'],
 	},
 	eslint.configs.recommended,
-	...tseslint.configs.recommended,
+	tseslint.configs.recommended,
 	{
 		languageOptions: {
 			sourceType: 'module',
