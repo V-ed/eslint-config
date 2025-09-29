@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.4...eslint-config-v0.2.5) (2025-09-29)
+
+
+### Bug Fixes
+
+* update peer deps in lockfile ([7cc6456](https://github.com/V-ed/eslint-config/commit/7cc64568ce0c818032050d5ca533d9d7b6f0a50f))
+
 ## [0.2.4](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.3...eslint-config-v0.2.4) (2025-09-29)
 
 
