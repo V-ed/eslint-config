@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.3...eslint-config-v0.2.4) (2025-09-29)
+
+
+### Bug Fixes
+
+* proper flat config usage with updated lockfile ([ea2e46c](https://github.com/V-ed/eslint-config/commit/ea2e46cf448963622722076d6d7687b1000d2706))
+
 ## [0.2.3](https://github.com/V-ed/eslint-config/compare/eslint-config-v0.2.2...eslint-config-v0.2.3) (2024-12-23)
 
 
