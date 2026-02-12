@@ -24,7 +24,7 @@ jobs:
         uses: fkirc/skip-duplicate-actions@v5
         continue-on-error: true
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         if: steps.skip_check.outputs.should_skip != 'true'
 
       - name: Install pnpm
